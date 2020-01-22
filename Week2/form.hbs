@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <Link type="text/css" rel="stylesheet" href="style.css"></Link>
+    <title>Form</title>
+    {{> Navigation}}
+</head>
+<body>
+    <h1>{{junk}}</h1>
+    <form action ="/results" method="POST">
+       Name:<br>
+        <input type="text" name="name">
+        <br>
+       Email:<br>
+        <input type="email" name="email">
+        <br>
+        Comments:<br>
+        <input type="text" name="comments">
+        <br>
+          <input type="submit">
+    </form>
+    {{> footer}}
+</body>
+</html>
