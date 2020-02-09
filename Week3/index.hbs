@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+</head>
+<body>
+    <div>This is {{name}} homepage!</div>
+    <br>
+    <br>
+    <form action="/table" method="post">
+        <label>Choose a number:</label>
+        <select name='selectNumber'>
+            <option>3</option>
+             <option>4</option>
+              <option>5</option>
+               <option>10</option>
+                <option>20</option>
+        </select>
+
+    <div>
+        <br>
+        <br>
+        <button type="submit">Create Table</button>
+    </div>
+    </form>
+<br>
+<br>
+    {{{Table selection color}}}
+    <br>
+    {{>footer}}
+</body>
+</html>
